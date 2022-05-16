@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "..\\CoDe"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"typeinfo": "c",
+			"stdio.h": "c",
+			"cctype": "c",
+			"cmath": "c",
+			"compare": "c",
+			"concepts": "c",
+			"cstdarg": "c",
+			"cstdio": "c",
+			"cstdlib": "c",
+			"type_traits": "c",
+			"limits": "c",
+			"new": "c",
+			"*.tcc": "c",
+			"cstdint": "c"
+		},
+		"prettier.useTabs": true,
+		"prettier.tabWidth": 3,
+		"editor.formatOnSave": true,
+		"cSpell.words": [
+			"reprompt"
+		]
+	}
+}
