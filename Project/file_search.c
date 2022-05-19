@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
+#include <time.h>
 #define File_Name "Jamaican_Triathlon_Society.bin"
 
 typedef struct
@@ -40,18 +41,25 @@ int main()
     STUDENT STD;
     STUDENT *info;
     info = &STD;
+
     float min = INT_MAX;
     FILE *fileptr = fopen(File_Name, "rb");
 
-    while (fread(&STD, sizeof(STUDENT), 1, fileptr))
+    if (fileptr == NULL)
     {
-
-        fscanf(fileptr, "%f", &info->time.cycling_time);
-
-        if (info->time.cycling_time < min)
-            min = info->time.cycling_time;
+        printf("File could not be found\n");
     }
-    printf("==>: %.2f", min);
-
+    else
+    {
+        while (fread(&STD, sizeof(STUDENT), 1, fileptr))
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                if (min > STD[i].time.total)
+                    min = STD[i].time.total;
+            }
+        }
+        printf("\n%.2f", min);
+    }
     return 0;
 }
