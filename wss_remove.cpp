@@ -13,5 +13,5 @@ int main()
     std::cout << "Enter Your Name: ";
     std::getline(std::cin >> std::ws, name);
 
-    std::cout << name << " is [" << age << "] Years Old";
+    std::cout << name << " is [ ==" << age << "] Years Old";
 }

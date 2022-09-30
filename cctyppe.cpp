@@ -64,6 +64,7 @@ int main()
     for (int i{}; i < sizeof(message); i++)
     {
         cout << char(std::toupper(message[i]));
+        std::string hello{"HellO THerE"};
     }
 
     cout << endl

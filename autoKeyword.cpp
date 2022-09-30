@@ -5,6 +5,7 @@ typedef float f;
 
 int main()
 {
+    // t_Light.changeLight(signal).compare("Red") == 0
     auto in{12};
     auto cha{'W'};
     auto str{"Name"};

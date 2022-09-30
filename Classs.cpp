@@ -16,9 +16,9 @@ public:
 
     People()
     {
-        name = "No Name";
+        name = "'No Name'";
         age = 0;
-        address = "No Address";
+        address = "'No Address'";
         balance = 0;
     };
 
@@ -61,7 +61,7 @@ class person : public People
 
 int main()
 {
-    People person_no1;
+    // People person_no1;
 
     // cout << "Enter Your Name: ";
     // getline(cin, person_no1.name);
@@ -76,9 +76,9 @@ int main()
     // cout << "What is Your Balance: ";
     // cin >> person_no1.balance;
 
-    People person_no2("Geovanni", 20, "Golden Grove", 2500);
+    People person_no1("Geovanni", 20, "Golden Grove", 2500);
 
-    cout << std::boolalpha << person_no2.isAdult();
+    // cout << std::boolalpha << person_no2.isAdult();
 
     cout << endl;
     cout << person_no1.name << " is " << person_no1.age << " years old who lives " << person_no1.address << " with a balance of " << person_no1.balance;

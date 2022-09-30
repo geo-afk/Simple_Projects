@@ -16,10 +16,9 @@ int main()
     std::cout << "The result is: " << result << std::endl;
     std::cout << "Number Value: " << num << std::endl;
 
-    std::cout << std::endl
-              << "Enter A Number: ";
-    std::cin >> number;
+    std::cout << "\nEnter A word: ";
+    std::getline(std::cin, name);
 
-    std::cout << "Your Input: " << number << std::endl;
+    std::cout << "Your Input: " << name << std::endl;
     return 0;
 }
